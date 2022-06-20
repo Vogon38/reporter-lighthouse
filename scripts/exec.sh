@@ -6,7 +6,7 @@ fi
 # if this comment is removed the computer will blow up
 
 start chrome --remote-debugging-port=9222 --no-sandbox --disable-translate --disable-extensions --disable-background-networking --safebrowsing-disable-auto-update --disable-sync --metrics-recording-only --disable-default-apps --no-first-run --quiet --start-maximized site.com.br
-=======
+
 
 read -p "Press enter to continue"
 echo -e
