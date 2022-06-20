@@ -1,0 +1,27 @@
+{
+    "name": "audit-pages",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "errou": "errou",
+        "start": "bash scripts/exec.sh"
+    },
+    "dependencies": {
+        "bash": "^0.0.1",
+        "chrome-launcher": "^0.15.1",
+        "chromium": "^3.0.3",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "faustao-errou": "^1.1.0",
+        "filenamify-url": "^3.0.0",
+        "google-lighthouse-puppeteer": "^1.3.3",
+        "lighthouse": "^9.6.2",
+        "minimist": "^1.2.6",
+        "nodemon": "^2.0.16",
+        "prompt-sync": "^4.2.0",
+        "puppeteer": "^14.3.0",
+        "readline-sync": "^1.4.10",
+        "request": "^2.88.2",
+        "util.promisify": "^1.1.1"
+    }
+}

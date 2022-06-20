@@ -1,0 +1,6 @@
+/node_modules
+/.vscode
+/report
+/archive
+/yarn.lock
+/package-lock.json
