@@ -7,17 +7,7 @@ const args = require("minimist")(process.argv.slice(2));
 
 (async () => {
   const chrome = await chromeLauncher.launch({
-    chromeFlags: [
-      "--headless",
-      "--start-maximized",
-      "--disable-gpu",
-      "--disable-dev-shm-usage",
-      "--ignore-certificate-errors",
-      "--test-type",
-      "--no-sandbox",
-      "--remote-debugging-port=9222"
-    ],
-  });
+    chromeFlags: ["--headless"]});
   const options = {
     logLevel: "info",
     formFactor: "desktop",
