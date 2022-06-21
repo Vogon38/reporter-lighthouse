@@ -7,7 +7,6 @@ fi
 
 start chrome --start-maximized site.com.br
 
-
 read -p "Press enter to continue"
 echo -e
 
@@ -24,5 +23,4 @@ echo -e
         url_site=$line
         node src/app.js --url=$url_site
     done < 'src\urls.txt'
-)
-# > blob.txt 2>&1
+) # > blob.txt 2>&1
