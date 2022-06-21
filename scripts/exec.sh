@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 if [ ! -d ./report ]; then
     mkdir -p ./report
 fi
