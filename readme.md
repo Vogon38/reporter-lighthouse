@@ -1,39 +1,42 @@
 ## About
 
-Executará uma série de testes na página e gerará um relatório sobre o seu desempenho. Nesse relatório, você poderá usar os testes que apresentaram falha como indicadores do que pode ser feito para aprimorar a plataforma.
+This script will run a series of tests on the webpage and generate a report about its performance. In this report, you can use the failing tests as indicators of what can be improved to enhance the platform.
 
-## Install
-```
+## Installation
+
+To install globally, run the following commands:
+
+```bash
 npm install -g faustao-errou
 ```
-```
+
+```bash
 npm install -g lighthouse
 # or use yarn:
 # yarn global add lighthouse
 ```
-```
+
+```bash
 npm install minimist
 ```
 
-## Run
-```
+## Running the Script
+```bash
 npm start
 ```
-
-Ao executar o arquivo sh todas as urls inseridas no arquivo urls.txt serão auditadas
+When running the .sh file, all URLs listed in the urls.txt file will be audited.
 
 ## Authentication
+When opening Chrome in debug mode, log in to the platform and leave the window open. It will be required for authenticating the audited URLs.
 
-Ao abrir o chrome-debug realize o login na plataforma e deixe a janela aberta, ela será necessária para a autenticação das urls auditadas
-
-## Utils
+## Utilities
+```bash
+node src/app.js --url=https://www.site.com
 ```
-node src/app.js --url=https://www.site.com.br
-```
+Use the command above to audit only a single page by replacing url.com with the desired address.
 
-_Utilize o comando acima para auditar somente uma página, substituindo o url.com.br pelo endereço desejado_
+Note: The authentication step is also required here. To do this, run the command and log in:
 
-**Obs.: a etapa de autenticação é necessária nesta parte também, para isso execute o comando e realize o login:**
-```
+```bash
 chrome.exe --remote-debugger-port=9222
-``` 
+```
